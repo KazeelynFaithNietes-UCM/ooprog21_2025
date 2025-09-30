@@ -6,14 +6,17 @@ public class DebugTrip {
     private static final String DEFAULT_CITY = "Atlanta";
     private static final String DEFAULT_MODE = "car";
 
+    // Constructor with destination only
     public DebugTrip(String destination) {
         this(destination, DEFAULT_CITY, DEFAULT_MODE);
     }
 
+    // Constructor with destination and departure
     public DebugTrip(String destination, String departure) {
         this(destination, departure, DEFAULT_MODE);
     }
 
+    // Constructor with all three
     public DebugTrip(String destination, String departure, String mode) {
         this.destination = destination;
         this.departure = departure;
