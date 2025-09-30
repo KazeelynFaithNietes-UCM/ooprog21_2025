@@ -1,31 +1,27 @@
-public class DebugBox
-{
+public class DebugBox {
     private int width;
     private int length;
     private int height;
 
-    public DebugBox()
-    {
-        length = 1;
-        width = 1;
-        height = 1;
+    // Default constructor
+    public DebugBox() {
+        this.width = 1;
+        this.length = 1;
+        this.height = 1;
     }
 
-    public DebugBox(int width, int length, int height)
-    {
-        this.width = width;
-        this.length = length;
-        this.height = height;
+    // Constructor with arguments
+    public DebugBox(int w, int l, int h) {
+        this.width = w;
+        this.length = l;
+        this.height = h;
     }
 
-    public void showData()
-    {
-        System.out.println("Width: " + width + " Length: " + length + " Height: " + height);
+    public void showData() {
+        System.out.println(" Width: " + width + " Length: " + length + " Height: " + height);
     }
 
-    public double getVolume()
-    {
-        double vol = length * width * height;
-        return vol;
+    public double getVolume() {
+        return width * length * height;
     }
 }
